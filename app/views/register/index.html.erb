@@ -1,0 +1,9 @@
+<h2><%= "Register a New User" %></h2>
+
+<%= form_with model: @user, local: true do |form| %>
+  <%= form.label :name, "Name:" %>
+  <%= form.text_field :name, Placeholder: "John Doe" %>
+  <%= form.label :email, "Email:" %>
+  <%= form.text_field :email, Placeholder: "John@gmail.com" %>
+  <%= form.submit "Create New User" %>
+<% end %>
