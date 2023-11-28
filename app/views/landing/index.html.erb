@@ -1,0 +1,6 @@
+<%= button_to "Create New User", "/register" %>
+
+<h3>Existing Users</h3>
+<% @users.each do |user| %>
+  <p><%= link_to user.email, user %></p>
+<% end %>
