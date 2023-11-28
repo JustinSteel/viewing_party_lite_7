@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "landing#index"
+
+  get "/register", to: "register#index"
+  post "/register", to: "users#create"
+
+  resources :users, only: [:show] do
+  end
 end
