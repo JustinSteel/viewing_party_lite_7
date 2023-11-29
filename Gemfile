@@ -73,4 +73,6 @@ group :test do
   gem "simplecov"
   gem "shoulda-matchers"
   gem "orderly"
+  gem "webmock"
 end
+gem "faraday"
