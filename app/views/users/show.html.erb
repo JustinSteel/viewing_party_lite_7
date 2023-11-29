@@ -1,7 +1,7 @@
 <%= "#{@user.name}'s Dashboard" %>
 </br>
 
-<%= button_to "Discover Movies", "/users/#{@user.id}/discover" %>
+<%= button_to "Discover Movies", "/users/#{@user.id}/discover", method: :get %>
 </br>
 
 <%= "API STUFF" %>

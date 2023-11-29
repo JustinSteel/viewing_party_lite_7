@@ -24,6 +24,5 @@ RSpec.describe "Register Page", type: :feature do
     fill_in "Email:", with: "Link@gmail.com"
 
     click_button("Create New User")
-
   end
 end
