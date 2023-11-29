@@ -1,8 +1,4 @@
 class MovieService
-  def members_by_state(state)
-    get_url("/congress/v1/members/house/#{state}/current.json")
-  end
-
   def search_by_title(title)
     get_url("/3/search/movie?query=#{title}&include_adult=false&language=en-US&page=1")
   end

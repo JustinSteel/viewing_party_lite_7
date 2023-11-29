@@ -1,7 +1,6 @@
 class MovieFacade
   def self.top_rated_movies
-    m = MovieService.new.top_rated_movies[:results]
-    require 'pry'; binding.pry
+    MovieService.new.top_rated_movies[:results]
   end
 
   def self.search_by_title(title)
