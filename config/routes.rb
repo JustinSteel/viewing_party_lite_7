@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   post "/register", to: "users#create"
 
   resources :users, only: [:show] do
+    get "/discover", to: "users#index"
+    resources :movies, only: [:index]
   end
 end

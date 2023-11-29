@@ -25,6 +25,5 @@ RSpec.describe "Register Page", type: :feature do
 
     click_button("Create New User")
 
-    save_and_open_page
   end
 end
