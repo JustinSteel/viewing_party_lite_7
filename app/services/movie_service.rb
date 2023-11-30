@@ -7,6 +7,18 @@ class MovieService
     get_url("/3/movie/top_rated?language=en-US&page=1")
   end
 
+  def movie_details(id)
+    get_url("/3/movie/#{id}?language=en-US")
+  end
+
+  def movie_cast(id)
+    get_url("/3/movie/#{id}/credits?language=en-US")
+  end
+
+  def movie_reviews(id)
+    get_url("/3/movie/#{id}/reviews?language=en-US&page=1")
+  end
+
   def get_url(url)
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)

@@ -3,7 +3,7 @@ require "rails_helper"
 describe MovieService do
   context "class methods" do
     context "#top_rated_movies" do
-      it "returns top movie data" do
+      it "returns top movie data", :vcr do
         top_movies = MovieService.new.top_rated_movies
 
         expect(top_movies).to be_a Hash
@@ -22,7 +22,7 @@ describe MovieService do
     end
 
     context "#search_by_title" do
-      it "returns movies relating to search" do
+      it "returns movies relating to search", :vcr do
         search = MovieService.new.search_by_title("The Grinch")
 
         expect(search).to be_a Hash
