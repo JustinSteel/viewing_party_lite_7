@@ -5,7 +5,7 @@ class Movies
     :overview,
     :poster_path
 
-  def initialize(movie_data)
+  def initialize(movie_data, cast_data = [], review_data = [])
     @id = movie_data[:id]
     @title = movie_data[:title]
     @overview = movie_data[:overview]

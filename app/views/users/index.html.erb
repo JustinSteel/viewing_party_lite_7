@@ -1,6 +1,7 @@
 <h2>Discover Movies</h2>
 <%= button_to "Find Top Rated Movies", "/users/#{@user.id}/movies?q=top_rated", method: :get %>
 <%= form_with url: "/users/#{@user.id}/movies", method: :get, data: {turbo: false} do |form|%>
+  <%= form.label :title, "Title:" %>
   <%= form.text_field :title, placeholder: "Search for a movie" %>
   <%= form.submit "Search" %>  
 <% end %>
