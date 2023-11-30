@@ -14,7 +14,7 @@ class Movies
     @id = movie_data[:id]
     @reviews = review_data.map { |review| [review[:author], review[:content]] }
     @title = movie_data[:title]
-    @genres = movie_data[:genres].map { |genre| genre[:name] }.join(', ')
+    @genres = movie_data[:genres].map { |genre| genre[:name] }
     @runtime = movie_data[:runtime]
     @overview = movie_data[:overview]
     @poster_path = movie_data[:poster_path]
@@ -23,5 +23,9 @@ class Movies
 
   def review_count
     @reviews.count
+  end
+
+  def join_genre
+    @genres.join(', ')
   end
 end
