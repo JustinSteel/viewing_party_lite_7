@@ -4,7 +4,7 @@
 </br>
 Vote: <%= @movie.vote_average.round(2) %> </br></br>
 Runtime: <%= "#{@movie.runtime/60}h #{@movie.runtime % 60}min" %> </br></br>
-Genre(s): <%= @movie.genres %></br> </br>
+Genre(s): <%= @movie.join_genre %></br> </br>
 Summary: <%= @movie.overview %> </br></br>
 <div id="cast">
 Cast: </br>
