@@ -4,4 +4,17 @@
 <%= button_to "Discover Movies", "/users/#{@user.id}/discover", method: :get %>
 </br>
 
-<%= "API STUFF" %>
+
+  <% @view_parties.each do |view_party| %>
+  <div>
+    <h2><%= view_party.title %></h2>
+    <p>Duration: <%= view_party.duration %> minutes</p>
+    <p>Date: <%= view_party.date %></p>
+    <p>Start Time: <%= view_party.start_time %></p>
+  </div>
+<% end %>
+  
+  
+  
+  
+  
