@@ -33,10 +33,4 @@ class ViewPartiesController < ApplicationController
       redirect_to user_path(@host)
     end
   end
-
-  private
-
-  def party_params
-    params.permit(:movie_title, :image, :duration, :day, :start_time, :movie_id)
-  end
 end
