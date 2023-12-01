@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>">
+        <%= message %>  
+        <% end %>
+        </div>
     <%= link_to "Home", root_path %>
     <%= render partial: "partials/header" %>
     <%= yield %>
