@@ -1,6 +1,6 @@
 <h2><%= @movie.title %></h2>
 <%= button_to "Discover Page", "/users/#{@user.id}/discover", method: :get %>
-<%= button_to "Create Viewing Party for #{@movie.title}", "/users/#{@user.id}/movies/#{@movie.id}/viewing_party/new", method: :get %>
+<%= button_to "Create Viewing Party for #{@movie.title}", "/users/#{@user.id}/movies/#{@movie.id}/view_parties/new", method: :get %>
 </br>
 Vote: <%= @movie.vote_average.round(2) %> </br></br>
 Runtime: <%= "#{@movie.runtime/60}h #{@movie.runtime % 60}min" %> </br></br>
