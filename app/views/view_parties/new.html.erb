@@ -3,14 +3,14 @@
 <div id="party_details">
   <h2>Viewing Party Details</h2>
   <h3>Movie Title: <%= @movie.title %></h3>
-  <%= form_with url: user_movie_view_parties_path(@host, @movie.id), local: true, data: {turbo: false} do |form| %>
+  <%= form_with url: "/users/#{@host.id}/movies/#{@movie.id}/view_parties", method: :post, local: true, data: {turbo: false} do |form| %>
     <div>
       <%= form.label :duration, "Duration of Party" %>
       <%= form.text_field :duration, value: @movie.runtime %>(min)</br>
     
       <%= form.label :day, "Date of Party" %>
       <%= form.date_field :day %></br>
-    
+      
       <%= form.label :start_time, "Start Time" %>
       <%= form.time_field :start_time %></br>
     

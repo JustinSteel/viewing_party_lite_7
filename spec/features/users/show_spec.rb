@@ -28,9 +28,9 @@ RSpec.describe "Users show Page", type: :feature do
       fill_in "Date of Party", with: Date.today.strftime('%Y-%m-%d')
       fill_in "Start Time", with: Time.now
       check "Sally (sally@gmail.com)"
-      save_and_open_page
       click_button "Create Party"
       expect(current_path).to eq("/users/#{@user.id}")
+      save_and_open_page
       # expect(page).to have_content(@movie.poster_path)
       expect(page).to have_content(@view_party.movie.title)
       expect(page).to have_content(@view_party.day)
