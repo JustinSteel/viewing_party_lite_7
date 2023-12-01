@@ -9,7 +9,7 @@ RSpec.describe "View Party New Page", type: :feature do
   describe "create a new view party" do
     it "should have content", :vcr do
       visit "/users/#{@user.id}/movies/550/view_parties/new"
-      save_and_open_page
+
       expect(page).to have_content("Create a Viewing Party for Fight Club")
       expect(page).to have_button("Discover Page")
       within("#party_details") do
@@ -23,6 +23,17 @@ RSpec.describe "View Party New Page", type: :feature do
         expect(page).to have_no_content("Bob (bob@gmail.com)")
         expect(page).to have_button("Create Party")
       end
+    end
+
+    it "should create a new view party", :vcr do
+      visit "/users/#{@user.id}/movies/550/view_parties/new"
+
+      fill_in "Duration of Party", with: 139
+      fill_in "Date of Party", with: "2021-01-01"
+      fill_in "Start Time", with: "12:00"
+      check "Sally (sally@gmail.com)"
+      click_button "Create Party"
+      expect(current_path).to eq("/users/#{@user.id}")
     end
   end
 end

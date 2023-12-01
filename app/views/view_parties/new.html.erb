@@ -3,7 +3,7 @@
 <div id="party_details">
   <h2>Viewing Party Details</h2>
   <h3>Movie Title: <%= @movie.title %></h3>
-  <%= form_with url: new_user_movie_view_party_path(@host, @movie), local: true, data: {turbo: false} do |form| %>
+  <%= form_with url: user_movie_view_parties_path(@host, @movie.id), local: true, data: {turbo: false} do |form| %>
     <div>
       <%= form.label :duration, "Duration of Party" %>
       <%= form.text_field :duration, value: @movie.runtime %>(min)</br>
@@ -17,7 +17,7 @@
       <h3>Invite Other Users</h3>
       <% @users.each do |user| %>
         <% unless user.id == @host.id %>
-          <%= form.check_box "#{user.name}" %>
+          <%= form.check_box "#{user.name} (#{user.email})" %>
           <%= form.label "#{user.name} (#{user.email})" %> </br>
         <% end %>
       <% end %>
