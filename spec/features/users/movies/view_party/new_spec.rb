@@ -35,5 +35,10 @@ RSpec.describe "View Party New Page", type: :feature do
       click_button "Create Party"
       expect(current_path).to eq("/users/#{@user.id}")
     end
+
+    it "should not create a new view party", :vcr do
+      visit "/users/#{@user.id}/movies/550/view_parties/new"
+      expect(current_path).to eq("/users/#{@user.id}/movies/550/view_parties/new")
+    end
   end
 end

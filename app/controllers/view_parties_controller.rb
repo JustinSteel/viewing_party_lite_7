@@ -11,20 +11,22 @@ class ViewPartiesController < ApplicationController
     @movie = MovieFacade.movie_details(params[:movie_id])
     @users = User.all
     @view_party = ViewParty.new(party_params)
-    if @movie.runtime > params[:duration].to_i
+    
+    if @movie.runtime > @view_party.duration || @view_party.duration <= 0
       flash[:error] = "A viewing party cannot be shorter than the movie's runtime."
+      render :new and return
     else
-      if @view_party.save
+       if @view_party.save
       flash[:success] = "Viewing party created!"
       @user_party = UserParty.create!( user: @host, view_party: @view_party, status: 0 )
       @users.each do |user|
         if user.id != @host.id
           UserParty.create!( user: user, view_party: @view_party, status: 1 )
+        end
+        end
       end
     end
-  end
-end
-    redirect_to user_path(@host)
+      redirect_to user_path(@host)
   end
 
   private
