@@ -8,4 +8,9 @@ RSpec.describe User, type: :model do
     it { should allow_value("user@example.com").for(:email) }
     it { should_not allow_value("user").for(:email) }
   end
+
+  describe "relationships" do
+    it { should have_many(:user_parties) }
+    it { should have_many(:view_parties).through(:user_parties) }
+  end
 end

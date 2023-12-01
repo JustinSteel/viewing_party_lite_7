@@ -14,10 +14,10 @@ RSpec.describe "poros" do
         poster_path: "path",
         vote_average: 1
       }
-  
-      movie = Movies.new(attrs)
-  
-      expect(movie).to be_a Movies
+
+      movie = Movie.new(attrs)
+
+      expect(movie).to be_a Movie
       expect(movie.title).to be_a(String)
       expect(movie.id).to be_a(Integer)
       expect(movie.cast).to be_a(Array)
@@ -27,6 +27,6 @@ RSpec.describe "poros" do
       expect(movie.overview).to be_a(String)
       expect(movie.poster_path).to be_a(String)
       expect(movie.vote_average).to be_a(Integer)
-    end 
+    end
   end
 end

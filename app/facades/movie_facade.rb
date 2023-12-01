@@ -11,6 +11,6 @@ class MovieFacade
     movie = MovieService.new.movie_details(id)
     cast = MovieService.new.movie_cast(id)[:cast].first(10)
     reviews = MovieService.new.movie_reviews(id)[:results]
-    Movies.new(movie, cast, reviews)
+    Movie.new(movie, cast, reviews)
   end
 end

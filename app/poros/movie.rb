@@ -1,4 +1,4 @@
-class Movies
+class Movie
   attr_reader :title,
     :vote_average,
     :id,
@@ -26,6 +26,6 @@ class Movies
   end
 
   def join_genre
-    @genres.join(', ')
+    @genres.join(", ")
   end
 end
