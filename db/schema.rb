@@ -15,7 +15,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_01_015502) do
   enable_extension "plpgsql"
 
   create_table "user_parties", force: :cascade do |t|
-    t.string "status"
+    t.integer "status"
     t.bigint "user_id", null: false
     t.bigint "view_party_id", null: false
     t.datetime "created_at", null: false
