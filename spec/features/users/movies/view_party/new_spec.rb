@@ -32,8 +32,7 @@ RSpec.describe "View Party New Page", type: :feature do
       fill_in "Duration of Party", with: 139
       fill_in "Date of Party", with: '01-01-2021'
       fill_in "Start Time", with: '12:00 PM'
-      check "Sally (sally@gmail.com)"
-      save_and_open_page
+      check("guests_#{@user2.id}")
       click_button "Create Party"
       expect(current_path).to eq("/users/#{@user.id}")
     end

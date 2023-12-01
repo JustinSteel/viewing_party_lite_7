@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @view_parties = @user.view_parties
+    # require 'pry'; binding.pry
   end
 
   def create

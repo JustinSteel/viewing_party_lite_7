@@ -19,6 +19,10 @@ class MovieService
     get_url("/3/movie/#{id}/reviews?language=en-US&page=1")
   end
 
+  def movie_image
+    get_url("/3/configuration")
+  end
+
   def get_url(url)
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)

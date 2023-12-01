@@ -7,12 +7,27 @@
 
   <% @view_parties.each do |view_party| %>
   <div>
-    <h2><%= view_party.title %></h2>
-    <p>Duration: <%= view_party.duration %> minutes</p>
-    <p>Date: <%= view_party.date %></p>
-    <p>Start Time: <%= view_party.start_time %></p>
+    <h2><%= view_party.movie_title %></h2>
+    <p><%= image_tag "#{view_party.picture}" %></p>
+    <p>Duration: <%= view_party.duration %></p>
+    <p>Date: <%= view_party.day %></p>
+    <p>Start Time: <%= view_party.start_time_formatted %></p>
+    <p>Host: <%= view_party.host %> </p>
+    <h3>Invited Users</h3>
+    <ul>
+      <% view_party.guests.each do |guest|  %>
+        <% if guest == @user.name %>
+          <li><p><strong><%= guest %></strong></p></li>
+        <% else %>
+          <li><p><%= guest %></p></li>
+        <% end %>
+      <% end %>
+    </ul>
+        
   </div>
 <% end %>
+
+
   
   
   

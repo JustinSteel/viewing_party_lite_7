@@ -17,8 +17,8 @@
       <h3>Invite Other Users</h3>
       <% @users.each do |user| %>
         <% unless user.id == @host.id %>
-          <%= form.check_box "#{user.name} (#{user.email})" %>
-          <%= form.label "#{user.name} (#{user.email})" %> </br>
+          <%= form.check_box :guests, {multiple: true}, user.id, nil %>
+          <%= form.label :guests, "#{user.name} (#{user.email})" %> </br>
         <% end %>
       <% end %>
       <%= form.submit "Create Party" %>

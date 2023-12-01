@@ -7,6 +7,10 @@ class MovieFacade
     MovieService.new.search_by_title(title)[:results]
   end
 
+  def self.image
+    MovieService.new.movie_image[:images]
+  end
+
   def self.movie_details(id)
     movie = MovieService.new.movie_details(id)
     cast = MovieService.new.movie_cast(id)[:cast].first(10)

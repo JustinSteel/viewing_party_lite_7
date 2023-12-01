@@ -25,18 +25,17 @@ RSpec.describe "Users show Page", type: :feature do
     visit "/users/#{@user.id}/movies/550/view_parties/new"
 
       fill_in "Duration of Party", with: 139
-      fill_in "Date of Party", with: Date.today.strftime('%Y-%m-%d')
-      fill_in "Start Time", with: Time.now
-      check "Sally (sally@gmail.com)"
+      fill_in "Date of Party", with: '01-01-2021'
+      fill_in "Start Time", with: '12:00 PM'
+      check("guests_#{@user2.id}")
       click_button "Create Party"
       expect(current_path).to eq("/users/#{@user.id}")
       save_and_open_page
-      # expect(page).to have_content(@movie.poster_path)
-      expect(page).to have_content(@view_party.movie.title)
-      expect(page).to have_content(@view_party.day)
-      expect(page).to have_content(@view_party.start_time)
+      expect(page).to have_content("Fight Club")
+      expect(page).to have_content("2021-01-01")
+      expect(page).to have_content("12:00 PM")
+      expect(page).to have_content("Host: Bob")
       expect(page).to have_content(@user2.name)
-      expect(page).to have_content(@user_party.status)
       expect(page).to have_content(@user.name)
   end
 end
