@@ -66,4 +66,22 @@ RSpec.describe "Users show Page", type: :feature do
     expect(page).to have_content(@user.name)
     expect(page).to have_content(@user3.name)
   end
+
+  it "should have a link for the title", :vcr do
+    visit "/users/#{@user2.id}/movies/299054/view_parties/new"
+
+    fill_in "Duration of Party", with: 139
+    fill_in "Date of Party", with: "02-02-2022"
+    fill_in "Start Time", with: "12:21 PM"
+    check("guests_#{@user.id}")
+    check("guests_#{@user3.id}")
+    click_button "Create Party"
+    expect(current_path).to eq("/users/#{@user2.id}")
+
+    expect(page).to have_link("Expend4bles")
+
+    click_link("Expend4bles")
+
+    expect(current_path).to eq("/users/#{@user2.id}/movies/299054")
+  end
 end

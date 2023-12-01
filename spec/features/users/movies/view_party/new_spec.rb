@@ -46,8 +46,6 @@ RSpec.describe "View Party New Page", type: :feature do
       check("guests_#{@user2.id}")
       click_button "Create Party"
 
-      save_and_open_page
-
       expect(current_path).to eq("/users/#{@user.id}/movies/550/view_parties/new")
     end
   end

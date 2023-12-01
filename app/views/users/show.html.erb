@@ -7,7 +7,7 @@
 
   <% @view_parties.each do |view_party| %>
   <div>
-    <h2><%= view_party.movie_title %></h2>
+    <h2><%= link_to "#{view_party.movie_title}",   user_movie_path(@user.id, view_party.movie_id) %></h2>
     <p><%= image_tag "#{view_party.picture}" %></p>
     <p>Duration: <%= view_party.duration %></p>
     <p>Date: <%= view_party.day %></p>
