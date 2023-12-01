@@ -6,6 +6,7 @@ RSpec.describe "View Party New Page", type: :feature do
     @user2 = User.create(name: "Sally", email: "sally@gmail.com")
     @user3 = User.create(name: "Joe", email: "joe@gmail.com")
   end
+
   describe "create a new view party" do
     it "should have content", :vcr do
       visit "/users/#{@user.id}/movies/550/view_parties/new"
@@ -29,9 +30,10 @@ RSpec.describe "View Party New Page", type: :feature do
       visit "/users/#{@user.id}/movies/550/view_parties/new"
 
       fill_in "Duration of Party", with: 139
-      fill_in "Date of Party", with: "2021-01-01"
-      fill_in "Start Time", with: "12:00"
+      fill_in "Date of Party", with: '01-01-2021'
+      fill_in "Start Time", with: '12:00 PM'
       check "Sally (sally@gmail.com)"
+      save_and_open_page
       click_button "Create Party"
       expect(current_path).to eq("/users/#{@user.id}")
     end
