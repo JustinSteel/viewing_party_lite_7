@@ -30,8 +30,8 @@ RSpec.describe "View Party New Page", type: :feature do
       visit "/users/#{@user.id}/movies/550/view_parties/new"
 
       fill_in "Duration of Party", with: 139
-      fill_in "Date of Party", with: '01-01-2021'
-      fill_in "Start Time", with: '12:00 PM'
+      fill_in "Date of Party", with: "01-01-2021"
+      fill_in "Start Time", with: "12:00 PM"
       check("guests_#{@user2.id}")
       click_button "Create Party"
       expect(current_path).to eq("/users/#{@user.id}")
@@ -39,6 +39,15 @@ RSpec.describe "View Party New Page", type: :feature do
 
     it "should not create a new view party", :vcr do
       visit "/users/#{@user.id}/movies/550/view_parties/new"
+
+      fill_in "Duration of Party", with: 25
+      fill_in "Date of Party", with: "01-01-2021"
+      fill_in "Start Time", with: "12:00 PM"
+      check("guests_#{@user2.id}")
+      click_button "Create Party"
+
+      save_and_open_page
+
       expect(current_path).to eq("/users/#{@user.id}/movies/550/view_parties/new")
     end
   end
