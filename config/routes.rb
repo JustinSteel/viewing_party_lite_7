@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get "/register", to: "register#index"
   post "/register", to: "users#create"
+  get "/login", to: "users#login_form"
+  post "/login", to: "users#login_user"
 
   resources :users, only: [:show] do
     get "/discover", to: "users#index"

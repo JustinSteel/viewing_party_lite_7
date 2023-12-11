@@ -8,6 +8,22 @@ class UsersController < ApplicationController
     @view_parties = @user.view_parties
   end
 
+  def login_form
+
+  end
+
+  def login_user
+    user = User.find_by(email: params[:email])
+    if user && user.authenticate(params[:password])
+      flash[:success] = "Welcome, #{user.name}!"
+      session[:user_id] = user.id
+      redirect_to user_path(user)
+    else
+      flash[:error] = "Sorry, your credentials are bad."
+      redirect_to login_path
+    end
+  end
+
   def create
     user = user_params
     user[:name] = user[:name].downcase
