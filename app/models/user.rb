@@ -2,6 +2,10 @@ class User < ApplicationRecord
   validates :name, :email, presence: true
   validates :email, uniqueness: true
   validates :email, format: {with: URI::MailTo::EMAIL_REGEXP}
+  validates :password, confirmation: true
+  validates :password_confirmation, presence: true
+
+  has_secure_password
 
   has_many :user_parties
   has_many :view_parties, through: :user_parties

@@ -9,13 +9,16 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
-    redirect_to "/users/#{@user.id}"
+    user = user_params
+    user[:name] = user[:name].downcase
+    new_user = User.create(user)
+    flash[:success] = "Welcome, #{new_user.name}!"
+    redirect_to user_path(new_user)
   end
 
   private
 
   def user_params
-    params.permit(:name, :email)
+    params.permit(:name, :email, :password, :password_confirmation)
   end
 end

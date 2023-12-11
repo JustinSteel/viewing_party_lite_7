@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Users Movie Page", type: :feature do
   describe "As a registered user" do
     it "top rated movies", :vcr do
-      user = User.create(name: "Bob", email: "bob@gmail.com")
+      user = User.create(name: "Bob", email: "bob@gmail.com", password: "Yolo911", password_confirmation: "Yolo911")
       visit "/users/#{user.id}/movies"
       expect(page).to have_link("The Godfather")
       click_link("The Godfather")

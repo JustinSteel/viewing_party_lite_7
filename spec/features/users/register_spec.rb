@@ -18,10 +18,14 @@ RSpec.describe "Register Page", type: :feature do
 
     expect(page).to have_content("Name:")
     expect(page).to have_content("Email:")
+    expect(page).to have_content("Password:")
+    expect(page).to have_content("Password Confirmation:")
     expect(page).to have_button("Create New User")
 
     fill_in "Name:", with: "Link"
     fill_in "Email:", with: "Link@gmail.com"
+    fill_in "Password:", with: "Yolo911"
+    fill_in "Password Confirmation:", with: "Yolo911"
 
     click_button("Create New User")
   end

@@ -2,9 +2,9 @@ require "rails_helper"
 
 RSpec.describe "Users show Page", type: :feature do
   before :each do
-    @user = User.create(name: "Bob", email: "bob@gmail.com")
-    @user2 = User.create(name: "Sally", email: "sally@gmail.com")
-    @user3 = User.create(name: "Joe", email: "joe@gmail.com")
+    @user = User.create(name: "Bob", email: "bob@gmail.com", password: "Yolo911", password_confirmation: "Yolo911")
+    @user2 = User.create(name: "Sally", email: "sally@gmail.com", password: "Yolo912", password_confirmation: "Yolo912")
+    @user3 = User.create(name: "Joe", email: "joe@gmail.com", password: "Yolo913", password_confirmation: "Yolo913")
   end
   it "should have content" do
     visit "/users/#{@user.id}"
