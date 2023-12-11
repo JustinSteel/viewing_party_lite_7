@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/facade/movie_facade_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/facade/movie_facade_spec.rb": {
         "lines": [
           1,
           null,
@@ -27,7 +27,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/rails_helper.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/rails_helper.rb": {
         "lines": [
           null,
           1,
@@ -108,7 +108,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/environment.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/environment.rb": {
         "lines": [
           null,
           1,
@@ -117,7 +117,7 @@
           1
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/application.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/application.rb": {
         "lines": [
           1,
           null,
@@ -158,7 +158,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/boot.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/boot.rb": {
         "lines": [
           1,
           null,
@@ -166,7 +166,7 @@
           1
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/environments/test.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/environments/test.rb": {
         "lines": [
           1,
           null,
@@ -230,7 +230,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/assets.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/initializers/assets.rb": {
         "lines": [
           null,
           null,
@@ -246,7 +246,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/content_security_policy.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/initializers/content_security_policy.rb": {
         "lines": [
           null,
           null,
@@ -257,38 +257,6 @@
           null,
           null,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/filter_parameter_logging.rb": {
-        "lines": [
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/inflections.rb": {
-        "lines": [
           null,
           null,
           null,
@@ -307,7 +275,39 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/initializers/permissions_policy.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/initializers/filter_parameter_logging.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/initializers/inflections.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/initializers/permissions_policy.rb": {
         "lines": [
           null,
           null,
@@ -322,7 +322,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/config/routes.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/config/routes.rb": {
         "lines": [
           1,
           null,
@@ -343,13 +343,13 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/helpers/application_helper.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/facades/movie_facade.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/facades/movie_facade.rb": {
         "lines": [
           1,
           1,
@@ -373,7 +373,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/discover_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/features/users/discover_spec.rb": {
         "lines": [
           1,
           null,
@@ -390,7 +390,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/landing_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/features/users/landing_spec.rb": {
         "lines": [
           1,
           null,
@@ -407,7 +407,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/movies/index_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/features/users/movies/index_spec.rb": {
         "lines": [
           1,
           null,
@@ -439,7 +439,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/movies/show_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/features/users/movies/show_spec.rb": {
         "lines": [
           1,
           null,
@@ -484,7 +484,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/movies/view_party/new_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/features/users/movies/view_party/new_spec.rb": {
         "lines": [
           1,
           null,
@@ -540,7 +540,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/register_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/features/users/register_spec.rb": {
         "lines": [
           1,
           null,
@@ -555,15 +555,21 @@
           1,
           1,
           1,
-          null,
-          null,
           1,
           1,
           null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
           1,
           1,
           1,
           null,
+          1,
+          1,
           1,
           1,
           null,
@@ -572,7 +578,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/features/users/show_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/features/users/show_spec.rb": {
         "lines": [
           1,
           null,
@@ -663,7 +669,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/models/user_party_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/models/user_party_spec.rb": {
         "lines": [
           1,
           null,
@@ -679,7 +685,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/user_party.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/models/user_party.rb": {
         "lines": [
           1,
           1,
@@ -691,14 +697,14 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/application_record.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/models/user_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/models/user_spec.rb": {
         "lines": [
           1,
           null,
@@ -706,36 +712,6 @@
           1,
           2,
           2,
-          2,
-          2,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/user.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/models/view_party_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
           2,
           2,
           2,
@@ -751,7 +727,44 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/models/view_party.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/models/view_party_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/models/view_party.rb": {
         "lines": [
           1,
           1,
@@ -785,7 +798,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/poros/movies_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/poros/movies_spec.rb": {
         "lines": [
           1,
           null,
@@ -821,7 +834,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/spec/services/movie_service_spec.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/spec/services/movie_service_spec.rb": {
         "lines": [
           1,
           null,
@@ -872,7 +885,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/services/movie_service.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/services/movie_service.rb": {
         "lines": [
           1,
           1,
@@ -912,7 +925,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/poros/movie.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/poros/movie.rb": {
         "lines": [
           1,
           1,
@@ -947,7 +960,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/users_controller.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/controllers/users_controller.rb": {
         "lines": [
           1,
           1,
@@ -962,6 +975,9 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -972,13 +988,13 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/application_controller.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/landing_controller.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/controllers/landing_controller.rb": {
         "lines": [
           1,
           1,
@@ -987,7 +1003,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/movies_controller.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/controllers/movies_controller.rb": {
         "lines": [
           1,
           1,
@@ -1006,7 +1022,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/view_parties_controller.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/controllers/view_parties_controller.rb": {
         "lines": [
           1,
           1,
@@ -1046,7 +1062,7 @@
           null
         ]
       },
-      "/Users/theaveryrodriguez/turing_work/3mod/projects/viewing_party/viewing_party_lite_7/app/controllers/register_controller.rb": {
+      "/Users/justinlee/Turing/3mod/projects/viewing_party_lite_7/app/controllers/register_controller.rb": {
         "lines": [
           1,
           1,
@@ -1056,6 +1072,6 @@
         ]
       }
     },
-    "timestamp": 1701469246
+    "timestamp": 1702331212
   }
 }

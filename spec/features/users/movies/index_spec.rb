@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Users Movie Page", type: :feature do
   describe "As a registered user" do
     it "should have content", :vcr do
-      user = User.create(name: "Bob", email: "bob@gmail.com")
+      user = User.create(name: "Bob", email: "bob@gmail.com", password: "passwords", password_confirmation: "passwords")
       visit "/users/#{user.id}/discover"
 
       click_button("Find Top Rated Movies")
@@ -15,7 +15,7 @@ RSpec.describe "Users Movie Page", type: :feature do
     end
 
     it "should show title based on search", :vcr do
-      user = User.create(name: "Bob", email: "bob@gmail.com")
+      user = User.create(name: "Bob", email: "bob@gmail.com", password: "passwords", password_confirmation: "passwords")
       visit "/users/#{user.id}/discover"
 
       fill_in :title, with: "Lord of the Rings"

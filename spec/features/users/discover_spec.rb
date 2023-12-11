@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Users discover Page", type: :feature do
   it "should have content" do
-    user = User.create(name: "Bob", email: "bob@gmail.com", id: 782)
+    user = User.create(name: "Bob", email: "bob@gmail.com", id: 782, password: "password", password_confirmation: "password")
     visit "/users/#{user.id}/discover"
 
     expect(page).to have_content("Discover Movies")
