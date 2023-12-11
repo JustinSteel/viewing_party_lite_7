@@ -12,8 +12,13 @@ class UsersController < ApplicationController
     user = user_params
     user[:name] = user[:name].downcase
     new_user = User.create(user)
+    if new_user.save
     flash[:success] = "Welcome, #{new_user.name}!"
     redirect_to user_path(new_user)
+    else
+      flash[:error] = new_user.errors.full_messages.to_sentence
+      redirect_to register_path
+    end
   end
 
   private
