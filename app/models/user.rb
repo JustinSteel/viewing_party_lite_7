@@ -6,6 +6,7 @@ class User < ApplicationRecord
   validates :password_confirmation, presence: true
 
   has_secure_password
+  enum role: ["default", "manager", "admin"]
 
   has_many :user_parties
   has_many :view_parties, through: :user_parties
