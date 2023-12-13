@@ -4,8 +4,13 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
-    @view_parties = @user.view_parties
+    if current_user?
+      @user = User.find(params[:id])
+      @view_parties = @user.view_parties
+    else
+      flash[:error] = "You must be registered and logged in to view this page."
+      redirect_to "/login"
+    end
   end
 
   def create
@@ -26,16 +31,19 @@ class UsersController < ApplicationController
 
   def login_user
     user = User.find_by(email: params[:email])
-    user[:email] = user[:email].downcase if user
-
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
       flash[:success] = "Welcome, #{user.name}!"
       redirect_to user_path(user)
     else
-      flash[:error] = user ? "Sorry, your password is incorrect." : "Sorry, your email was not found."
-      render :login_form
+      flash[:error] = "Sorry, your credentials are bad."
+      redirect_to login_path
     end
+  end
+
+  def logout
+    session[:user_id] = nil
+    redirect_to root_path
   end
 
   private

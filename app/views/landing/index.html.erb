@@ -1,6 +1,19 @@
+<% if !current_user? %>
+  <%= link_to "Login", "/login", method: :get %>
+<% else %>
+  <%= link_to "Logout", "/logout", method: :get %>
+<% end %>
+
 <%= button_to "Create New User", "/register", method: :get %>
 
-<h3>Existing Users</h3>
+<% if current_user? %>
+  <h3> Existing Users </h3>
+<% else %>
+<% end %>
+
 <% @users.each do |user| %>
-  <p><%= link_to user.email, user %></p>
+  <% if current_user? %>
+    <p><%= user.email %></p>
+  <% else %>
+  <% end %>
 <% end %>

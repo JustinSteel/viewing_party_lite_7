@@ -7,6 +7,12 @@ RSpec.describe "Users show Page", type: :feature do
     @user3 = User.create(name: "Joe", email: "joe@gmail.com", password: "Yolo913", password_confirmation: "Yolo913")
   end
   it "should have content" do
+    visit "/login"
+
+    fill_in "Email:", with: "bob@gmail.com"
+    fill_in "Password:", with: "Yolo911"
+    click_button "Login"
+
     visit "/users/#{@user.id}"
 
     expect(page).to have_content("Bob's Dashboard")
@@ -14,6 +20,12 @@ RSpec.describe "Users show Page", type: :feature do
   end
 
   it "should direct to discover page" do
+    visit "/login"
+
+    fill_in "Email:", with: "bob@gmail.com"
+    fill_in "Password:", with: "Yolo911"
+    click_button "Login"
+
     visit "/users/#{@user.id}"
 
     click_button "Discover Movies"
@@ -22,6 +34,12 @@ RSpec.describe "Users show Page", type: :feature do
   end
 
   it "should have viewing parties", :vcr do
+    visit "/login"
+
+    fill_in "Email:", with: "bob@gmail.com"
+    fill_in "Password:", with: "Yolo911"
+    click_button "Login"
+
     visit "/users/#{@user.id}/movies/550/view_parties/new"
 
     fill_in "Duration of Party", with: 139
@@ -40,6 +58,12 @@ RSpec.describe "Users show Page", type: :feature do
   end
 
   it "should have invite parties", :vcr do
+    visit "/login"
+
+    fill_in "Email:", with: "bob@gmail.com"
+    fill_in "Password:", with: "Yolo911"
+    click_button "Login"
+
     visit "/users/#{@user2.id}/movies/299054/view_parties/new"
 
     fill_in "Duration of Party", with: 139
@@ -68,6 +92,12 @@ RSpec.describe "Users show Page", type: :feature do
   end
 
   it "should have a link for the title", :vcr do
+    visit "/login"
+
+    fill_in "Email:", with: "bob@gmail.com"
+    fill_in "Password:", with: "Yolo911"
+    click_button "Login"
+
     visit "/users/#{@user2.id}/movies/299054/view_parties/new"
 
     fill_in "Duration of Party", with: 139

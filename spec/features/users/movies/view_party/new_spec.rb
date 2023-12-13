@@ -9,6 +9,12 @@ RSpec.describe "View Party New Page", type: :feature do
 
   describe "create a new view party" do
     it "should have content", :vcr do
+      visit "/login"
+
+      fill_in "Email:", with: "bob@gmail.com"
+      fill_in "Password:", with: "Yolo911"
+      click_button "Login"
+
       visit "/users/#{@user.id}/movies/550/view_parties/new"
 
       expect(page).to have_content("Create a Viewing Party for Fight Club")
@@ -27,6 +33,12 @@ RSpec.describe "View Party New Page", type: :feature do
     end
 
     it "should create a new view party", :vcr do
+      visit "/login"
+
+      fill_in "Email:", with: "bob@gmail.com"
+      fill_in "Password:", with: "Yolo911"
+      click_button "Login"
+
       visit "/users/#{@user.id}/movies/550/view_parties/new"
 
       fill_in "Duration of Party", with: 139
@@ -38,6 +50,12 @@ RSpec.describe "View Party New Page", type: :feature do
     end
 
     it "should not create a new view party", :vcr do
+      visit "/login"
+
+      fill_in "Email:", with: "bob@gmail.com"
+      fill_in "Password:", with: "Yolo911"
+      click_button "Login"
+
       visit "/users/#{@user.id}/movies/550/view_parties/new"
 
       fill_in "Duration of Party", with: 25
