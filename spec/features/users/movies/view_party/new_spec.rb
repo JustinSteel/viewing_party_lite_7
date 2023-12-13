@@ -5,6 +5,10 @@ RSpec.describe "View Party New Page", type: :feature do
     @user = User.create(name: "Bob", email: "bob@gmail.com", password: "passwords", password_confirmation: "passwords")
     @user2 = User.create(name: "Sally", email: "sally@gmail.com", password: "password", password_confirmation: "password")
     @user3 = User.create(name: "Joe", email: "joe@gmail.com", password: "pass", password_confirmation: "pass")
+    visit login_path
+    fill_in "Email:", with: @user.email
+    fill_in "Password:", with: @user.password
+    click_button("Login")
   end
 
   describe "create a new view party" do
